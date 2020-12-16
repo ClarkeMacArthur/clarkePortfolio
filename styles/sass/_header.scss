@@ -1,0 +1,35 @@
+header {
+    background-color: $purple;
+    min-height: 50vh;
+    margin-bottom:50%;
+    span {
+        display:block;
+    }
+}
+
+.headerFlex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+
+header::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    transform: skewY(-7deg);
+    background: $purple;
+    transform-origin: bottom left;
+    z-index: -1;
+}
+
+.logo {
+    width:100px;
+    position: absolute;
+    top: 15px;
+    left:15px;
+}
