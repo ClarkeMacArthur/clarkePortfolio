@@ -62,7 +62,6 @@ header h2 {
     }
 }
 
-
     .skillIcon {
         font-size: 8rem;
         color:$purple;
@@ -75,3 +74,21 @@ header h2 {
         color:$pink;
         font-weight:500;
     }
+
+.project {
+    h4 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    ul {
+        font-size: 5rem;
+        color: $purple;
+        img {
+            width: 50px;
+        }
+        .firebase {
+            width: 40px;
+        }
+    }
+}

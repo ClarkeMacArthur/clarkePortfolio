@@ -15,7 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
-
+    <!-- Animate on Scroll stylesheet link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Clarke MacArthur: Front End Developer</title>
 </head>
@@ -203,15 +204,17 @@
         </section>
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <div class="wrapper">
-                <h2 class="smallHeading">What I make</h2>
-                <h3 class="largeHeading">Current Projects</h3>
+            <div class="wrapper projectFlex">
+                <div class="sectionHeading">     
+                    <h2 class="smallHeading">What I make</h2>
+                    <h3 class="largeHeading">Current Projects</h3>
+                </div>
                 <!-- Punstagram -->
-                <div class="projectOne">
-                    <div class="projectMockup">
+                <div class="project projectOne" >
+                    <div class="projectMockup" data-aos="fade-right"  data-aos-duration="1500">
                         <img src="./assets/punstagramResponsive.png" alt="mockup of a searchable pun app displayed on a large mac display, a tablet and a phone to show responsive design">
                     </div>
-                    <div class="projectText">
+                    <div class="projectText" data-aos="fade-left" data-aos-duration="1500">
                         <h4>Punstagram!</h4>
                         <p>Want a funny? Live a giggle!</p>
                         <p>A fun little joke app where you can search for different jokes using the Dadjoke API!</p>
@@ -244,12 +247,8 @@
                     </div>
                 </div>
                 <!-- Adventure Dice -->
-                <div class="projectTwo">
-                    <div class="projectMockup">
-                        <img src="./assets/adventureDiceResponsive.png"
-                            alt="mockup of a table top dice rolling app displayed on a large mac display, a tablet and a phone to show responsive design.">
-                    </div>
-                    <div class="projectText">
+                <div class="project projectTwo">
+                    <div class="projectText" data-aos="fade-right"  data-aos-duration="1500">
                         <h4>Adventure Dice</h4>
                         <p>Roll for initiative!</p>
                         <p>Going on an adeventure? It's dangerous to go alone, take these with you! Choose from 6 different polyhedral dice and roll away. Roll each die up to 10 times - great for table top roleplaying games! </p>
@@ -277,14 +276,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="projectMockup" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="./assets/adventureDiceResponsive.png" alt="mockup of a table top dice rolling app displayed on a large mac display, a tablet and a phone to show responsive design.">
+                    </div>
                 </div>
                 <!-- WeatherApp -->
-                <div class="projectThree">
-                    <div class="projectMockup">
+                <div class="project projectThree">
+                    <div class="projectMockup" data-aos="fade-right"  data-aos-duration="1500">
                         <img src="./assets/weatherAppResponsive.png"
                             alt="mockup of a weather app displayed on a large mac display, a tablet and a phone to show responsive design.">
                     </div>
-                    <div class="projectText">
+                    <div class="projectText" data-aos="fade-left" data-aos-duration="1500">
                         <h4>WeatherApp</h4>
                         <p>What's the Weather like in your City?</p>
                         <p>Look up the weather in a city/country of your choosing! The background and icons change depending on the weather state. Made as a pair programming project with the wonderful <a href="http://regazzi.dev/">Lucas Regazzi</a></p>
@@ -318,12 +320,8 @@
                     </div>
                 </div>
                 <!-- MixTape 2020 -->
-                <div class="projectFour">
-                    <div class="projectMockup">
-                        <img src="./assets/mixTape2020Responsive.png"
-                            alt="mockup of a mix tape app displayed on a large mac display, a tablet and a phone to show responsive design">
-                    </div>
-                    <div class="projectText">
+                <div class="project projectFour">
+                    <div class="projectText" data-aos="fade-right"  data-aos-duration="1500">
                         <h4>MixTape 2020</h4>
                         <p>This year sucked, make a mix about it!</p>
                         <p>An app where you can make a mixtape of your choice! Choose from 6 different audio cassette tapes, name your mix in permanent marker and add your tracks t the jcard. Who is your mix for?</p>
@@ -356,14 +354,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="projectMockup" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="./assets/mixTape2020Responsive.png"
+                            alt="mockup of a mix tape app displayed on a large mac display, a tablet and a phone to show responsive design">
+                    </div>
                 </div>
                 <!-- College Navigator -->
-                <div class="projectFive">
-                    <div class="projectMockup">
+                <div class="project projectFive">
+                    <div class="projectMockup" data-aos="fade-right"  data-aos-duration="1500">
                         <img src="./assets/collegeNavigatorResponsive.png"
                             alt="mockup of college searching app displayed on a large mac display, a tablet and a phone to show responsive design">
                     </div>
-                    <div class="projectText">
+                    <div class="projectText" data-aos="fade-left"  data-aos-duration="1500">
                         <h4>College Navigator</h4>
                         <p>Looking for a College, University or Tradeschool?</p>
                         <p>Search for post-secondary institutions within a certain radius  of any city! You can save your favorites and add notes to them. Don't see the school you want? Add it in with our handy form! Your added schools will also show up alongside your search results! Made in collaboration with these truly amazing individuals: 
@@ -392,7 +394,7 @@
                                             title="REST API">
                                     </li>
                                     <li>
-                                        <img src="./assets/firebaseIcon.svg" alt="a blue-purple icon of the Firebase logo" title="Firebase">
+                                        <img src="./assets/firebaseIcon.svg" alt="a blue-purple icon of the Firebase logo" title="Firebase" class="firebase">
                                     </li>
                                 </ul>
                             </div>
@@ -408,8 +410,10 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="wrapper">
-                <h2 class="smallHeading">Get in touch</h2>
-                <h3 class="largeHeading">Contact Me</h3>
+                <div class="sectionHeading">
+                    <h2 class="smallHeading">Get in touch</h2>
+                    <h3 class="largeHeading">Contact Me</h3>
+                </div>
                 <div class="contactIcons">
                     <a href="">
                         <i class="fab fa-twitter"></i>
@@ -431,5 +435,10 @@
             </div>
         </section>
     </main>
+    <!-- Link to Animate on Scroll JS Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
