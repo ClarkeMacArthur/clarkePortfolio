@@ -1,0 +1,113 @@
+.aboutMe {
+    background-color: white;
+    &::before {
+        content:"";
+        position:absolute;
+        top:auto;
+        left:0;
+        height: 100%;
+        width:100%;
+        transform: skewY(-7deg);
+        background: white;
+        transform-origin: bottom left;
+        z-index: -1;
+    }
+}
+
+
+.sectionHeading {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:300px;
+}
+
+.aboutFlex {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.profileContainer {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom:-200px;
+    .profilePhoto {
+        max-width: 400px;
+        margin-right: 50px;
+    }
+    .profileText {
+        width:50%;
+        p {
+            margin-bottom:10px;
+        }
+    }
+}
+
+.skills {
+        &::before {
+        content:"";
+        position:absolute;
+        top:auto;
+        left:0;
+        height: 100%;
+        width:100%;
+        transform: skewY(7deg);
+        background: $offWhite;
+        transform-origin: bottom right;
+        z-index: -1;
+    }
+}
+
+.skillFlex {
+    .sectionHeading{
+        padding-top:200px;
+    }
+}
+
+.skillList {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+}
+
+.skillItem {
+    position: relative;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 40px 0 40px;
+    text-align: center;
+    box-shadow: -2px 9px 25px #d3d3d3;
+    transition: all 0.3s ease-in;
+    padding: 5px 15px;
+    &:hover {
+        box-shadow: 2px 2px 15px lightgrey;
+    }
+    &:hover .skillText {
+        opacity: 1
+    }
+    .skillText {
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #f7f7f7;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        transition: all 0.5s ease-in;
+    }
+}
+
+
