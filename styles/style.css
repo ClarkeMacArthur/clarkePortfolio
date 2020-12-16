@@ -714,6 +714,7 @@ header::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 300px;
 }
 
 .projectFlex .sectionHeading {
@@ -760,4 +761,159 @@ header::after {
           align-items: flex-end;
   text-align: right;
   margin-right: 20px;
+}
+
+.contact {
+  background-color: #443a8b;
+  color: white;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  background: #443a8b;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  z-index: -1;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #443a8b;
+}
+
+.contactFlex .sectionHeading {
+  margin-top: 100px;
+}
+
+.contactFlex .sectionHeading .smallHeading::before {
+  border-left: 2px solid white;
+}
+
+.contactFlex p {
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 5rem;
+}
+
+.contact ul a {
+  color: #fe6192;
+  margin: 0 50px;
+}
+
+.contact ul a:hover {
+  color: #50efcb;
+}
+
+form {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input, form textarea {
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 550px;
+  margin: 20px 0;
+  padding: 10px 5px;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 400;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 400;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 400;
+}
+
+form input::placeholder, form textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 400;
+}
+
+form input:focus, form textarea:focus {
+  outline: 1px solid #fe6192;
+  background: #5649af;
+}
+
+form label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 25px;
+}
+
+form textarea {
+  border-top: 2px solid white;
+  height: 200px;
+  resize: none;
+}
+
+button {
+  color: #fe6192;
+  font-weight: 700;
+  border: 2px solid #fe6192;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 10px 70px;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #443a8b;
+  color: white;
+  text-align: center;
+  padding-top: 450px;
+  padding-bottom: 50px;
+  letter-spacing: 1.4px;
 }
