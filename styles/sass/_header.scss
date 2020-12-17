@@ -2,6 +2,7 @@ header {
     background-color: $purple;
     min-height: 50vh;
     margin-bottom:300px;
+    
     span {
         display:block;
     }
@@ -32,4 +33,41 @@ header::after{
     position: absolute;
     top: 15px;
     left:15px;
+}
+
+.headerText {
+    position:relative;
+}
+
+.backgroundShapes {
+    position:absolute;
+}
+
+.blueSquiggles {
+    top: -90%;
+    left: -45%;
+}
+
+.pinkSquiggle {
+    top: 115%;
+    left: -50%;
+}
+
+.greenArrow {
+    top: 90%;
+    right: -35%;
+}
+
+.tinyBlueTriangle {
+    top: 190%;
+}
+
+.greenCircle {
+    top:-150%;
+    right: 30%;
+}
+
+.tinyPinkCircle {
+    top: 290%;
+    right: 30%;
 }

@@ -35,6 +35,9 @@
     .profilePhoto {
         max-width: 400px;
         margin-right: 50px;
+        img {
+            box-shadow: 26px 32px 2px 0px rgba(211,211,211,1);
+        }
     }
     .profileText {
         width:50%;
