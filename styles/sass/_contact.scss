@@ -37,10 +37,12 @@
 .contact ul {
     display: flex;
     font-size: 5rem;
+    justify-content: center;
     
     a {
         color: $pink;
-        margin: 0 50px ;
+        margin: 0 50px;
+        transition: all 0.3s ease-in;
         &:hover {
             color: $green;
         }
@@ -91,4 +93,62 @@ button {
     text-transform:uppercase;
     padding: 10px 70px;
     margin-top: 30px;
+    transition: all 0.3s ease-in;
+    cursor:pointer;
+    &:hover, &:focus {
+        color: $green;
+        border: 2px solid $green;
+    }
+    &:active {
+        background-color: $green;
+        color: $purple;
+    }
+}
+
+.blueTriangle {
+    position: absolute;
+    width: 40%;
+    top: -75%;
+    left: -70%;
+}
+
+.pinkCircleContact {
+    position: absolute;
+    top: -75%;
+    left: -54%;
+}
+
+.bigGreenCircleContact {
+    position: absolute;
+    width: 30%;
+    top: -54%;
+    right: -61%;
+}
+
+.blueSquigglesContact {
+    position: absolute;
+    width: 20%;
+    transform: rotate(-60deg);
+    right: -60%;
+    top: 39%;
+}
+
+.greenArrowContact {
+    position: absolute;
+    width: 15%;
+    top: 50%;
+    right: 150%;
+    transform: rotatey(180deg);
+}
+
+.pinkSquiggleContact {
+    position: absolute;
+    top: -18%;
+    left: -73%;
+}
+
+.tinyPinkTriangleContact {
+    position: absolute;
+    top: 70%;
+    right: -40%;
 }

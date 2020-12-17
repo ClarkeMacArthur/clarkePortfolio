@@ -1,6 +1,6 @@
 header {
     background-color: $purple;
-    min-height: 50vh;
+    min-height: 70vh;
     margin-bottom:300px;
     
     span {
@@ -44,8 +44,8 @@ header::after{
 }
 
 .blueSquiggles {
-    top: -90%;
-    left: -45%;
+    top:-150%;
+    right: 30%;
 }
 
 .pinkSquiggle {
@@ -63,8 +63,8 @@ header::after{
 }
 
 .greenCircle {
-    top:-150%;
-    right: 30%;
+    top: -90%;
+    left: -45%;
 }
 
 .tinyPinkCircle {

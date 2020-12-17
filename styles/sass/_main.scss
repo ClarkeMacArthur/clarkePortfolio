@@ -1,5 +1,4 @@
-.aboutMe {
-    background-color: white;
+main {
     &::before {
         content:"";
         position:absolute;
@@ -12,6 +11,12 @@
         transform-origin: bottom left;
         z-index: -1;
     }
+
+}
+
+
+.aboutMe {
+    background-color: white;
 }
 
 
@@ -30,21 +35,61 @@
 
 .profileContainer {
     display: flex;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom:-200px;
+    position: relative;
     .profilePhoto {
         max-width: 400px;
         margin-right: 50px;
-        img {
+        position: relative;
+        z-index: 100;
+        .clarkePhoto {
             box-shadow: 26px 32px 2px 0px rgba(211,211,211,1);
+            position:relative;
+            z-index: 100;
         }
     }
-    .profileText {
-        width:50%;
-        p {
-            margin-bottom:10px;
+        .profileText {
+            width:50%;
+            p {
+                margin-bottom:10px;
+            }
         }
     }
+
+
+.greyDotCircle {
+    position: absolute;
+z-index: 95;
+top: 20%;
+width: 600px;
+left: -50%;
+}
+
+.pinkTriangle {
+    position: absolute;
+    top: -110%;
+    left: -10%;
+}
+
+.thickPurpleCircle {
+    position: absolute;
+    top: -80%;
+    left: -8%;
+    width: 200px
+}
+
+.blueSquiggles2 {
+    position: absolute;
+    top: -100%;
+    right: 10%;
+}
+
+.thinPurpleCircle {
+    position: absolute;
+    top: -20%;
+    right: 0;
 }
 
 .skills {
@@ -113,6 +158,37 @@
     }
 }
 
+.backgroundImages {
+    position:relative;
+}
+
+.thinPurpleTriangle {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    transform: rotate(20deg);
+    width: 20%;
+}
+
+.pinkCircle {
+    position: absolute;
+    top: -70%;
+    right: 5%;
+    width: 5%;
+}
+
+.blueCircle {
+    position: absolute;
+    right: 85%;
+    top: 60%;
+}
+
+.pinkSquiggle2 {
+    position: absolute;
+    right: 0;
+    top: 130%;
+}
+
 .projectFlex {
     display:flex;
     flex-direction: column;
@@ -133,16 +209,55 @@
             padding: 10px;
         }
     }
-    .projectText {
-        display:flex;
-        flex-direction: column;
-        width: 70%;
-        padding: 20px;
-        p {
-            margin-bottom: 10px;
+}
+
+.projectText {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    p {
+        margin-bottom: 10px;
+    }
+    a {
+        color: $pink;
+        transition: all 0.3s ease-in;
+        &:hover, &:focus {
+            color: $purple;
         }
     }
 }
+
+.projectLinks {
+        a {
+            text-decoration: none;
+            background: #443a8b;
+            border: 1px solid #443a8b;
+            padding: 10px 30px;
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            transition: all 0.3s ease-in;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            &:hover {
+                background-color: $pink;
+                border: 1px solid $pink;
+                color:white;
+            }
+        }
+        .gitRepo {
+            background: white;
+            border: 1px solid $pink;
+            color: $pink;
+            &:hover {
+                background-color: $pink;
+                color: white;
+            }
+        }
+    }
 
 .projectTwo, .projectFour {
     .projectText {
@@ -150,6 +265,55 @@
         text-align: right;
         margin-right: 20px;
     }
+}
+
+.purpleTriangleProject {
+    position: absolute;
+    top: -14.5%;
+    right: 82%;
+    transform: rotate(-20deg);
+}
+
+.pinkCircleProject {
+    position: absolute;
+    top: -15.9%;
+    left: 9%;
+}
+
+.greyDotsSquare1 {
+    position: absolute;
+    right: -30%;
+    z-index: -1;
+    top: 5%;
+}
+
+.bigPinkCircle  {
+    position: absolute;
+    width: 20%;
+    left: -17%;
+    top: 35%;
+    z-index: -1;
+}
+
+.blueSquigglesProject {
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    z-index: -1;
+}
+
+.greenArrowProject {
+    position: absolute;
+    width: 10%;
+    right: -5%;
+    top: 50%;
+}
+
+.greyDotsSquare2 {
+    position: absolute;
+    top: 70%;
+    left: -20%;
+    z-index: -1;
 }
 
 
