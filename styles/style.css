@@ -321,6 +321,7 @@ header h2 {
 .profileText p {
   font-size: 1.8rem;
   line-height: 1.4;
+  letter-spacing: 1.08px;
 }
 
 .profileText ul {
@@ -1385,6 +1386,9 @@ footer {
   header h2 {
     font-size: 2rem;
   }
+  .logo {
+    width: 70px;
+  }
   .pinkSquiggle {
     display: block;
     left: 46%;
@@ -1461,5 +1465,129 @@ footer {
   }
   .pinkSquiggleContact {
     left: -15%;
+  }
+}
+
+@media (max-width: 460px) {
+  header {
+    min-height: 50vh;
+  }
+  header .headerFlex {
+    height: 50vh;
+  }
+  header .heading {
+    margin-top: 74%;
+  }
+  header h2 {
+    font-size: 1.8rem;
+  }
+  .hamburgerMenu {
+    height: auto;
+  }
+  .hamburgerMenu a {
+    font-size: 3rem;
+  }
+  .logo {
+    display: none;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h1 span {
+    font-size: 4rem;
+  }
+  .blueSquiggles {
+    top: 28%;
+  }
+  .pinkSquiggle {
+    left: 3%;
+    top: 123%;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  .tinyBlueTriangle {
+    display: none;
+  }
+  .triangleContainer {
+    top: -37%;
+  }
+  .blueSquiggles2 {
+    top: -25%;
+  }
+  .largeHeading {
+    font-size: 6rem;
+  }
+  .smallHeading {
+    font-size: 1.8rem;
+  }
+  .triangle2Container {
+    top: -57%;
+  }
+  .skillItem {
+    margin: 10px;
+  }
+  .skillFlex .largeHeading {
+    font-size: 5rem;
+  }
+  .project {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project .projectMockup {
+    width: 80%;
+  }
+  .project .projectText {
+    width: 100%;
+  }
+  .project .projectText h4 {
+    font-size: 2rem;
+  }
+  .project .projectText p {
+    font-size: 1.6rem;
+  }
+  .project .projectText li {
+    padding: 5px;
+  }
+  .project .projectLinks a {
+    padding: 10px 15px;
+  }
+  .bigPinkCircle {
+    width: 38%;
+    left: -11%;
+  }
+  .blueSquigglesProject {
+    top: 31%;
+    left: 0;
+  }
+  .triangle4Container {
+    width: 51%;
+    top: -80%;
+  }
+  .triangle4Container .pinkCircleContact {
+    left: 34%;
+  }
+  .contact ul a {
+    margin: 0 20px;
+  }
+  .emailAddress {
+    margin: 80px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .emailAddress p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .tinyPinkTriangleContact {
+    right: 0;
+  }
+  .greenArrowContact {
+    top: 98%;
+  }
+  .pinkSquiggleContact, .bigGreenCircleContact {
+    display: none;
   }
 }
