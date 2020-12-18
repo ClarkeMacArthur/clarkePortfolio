@@ -95,6 +95,7 @@
         align-items: center;
         .profilePhoto {
             width:100%;
+            margin-right:0;
         }
         .profileText {
             position: relative;
@@ -191,4 +192,118 @@
         top: 12%;
         right: -8%;
     }
+}
+
+@media (max-width:650px) {
+    header {
+        h1 {
+            font-size: 6rem;
+        }
+        h2 {
+            font-size:2rem;
+        }
+    }
+
+    .pinkSquiggle {
+        display:block;
+        left: 46%;
+        top: 295%;
+    }
+
+    .greenCircle {
+        left: 4%;
+    }
+
+    .greenArrow {
+        right: 19%;
+    }
+    
+    .tinyBlueTriangle {
+        left: 6%;
+    }
+
+    .tinyPinkCircle {
+        display: none;
+}
+
+    .hamburgerMenu {
+        width: 300px;
+    }
+
+    .triangleContainer {
+        top: -46%;
+        width: 70%;
+    }
+
+    .profileContainer .profilePhoto .clarkePhoto {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    .profileText {
+        p:first-of-type {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+
+    .greyDotCircle {
+        top: 13%;
+        left: -32%;
+    }
+
+    .triangle2Container {
+    top: -67%;
+    width: 47%;
+}
+
+    .blueCircle {
+        width: 42%;
+    }
+
+    .pinkSquiggle2 {
+        top: 110%;
+    }
+
+    .projectFlex .sectionHeading {
+    padding-top: 200px;
+    }
+
+    .triangle3Container {
+        width: 37%;
+        right: 57%;
+    }
+
+    .triangle4Container {
+        left: 6%;
+        width: 34%;
+    }
+
+    form {
+        input, textarea {
+            width: 320px;
+        }
+        label {
+            align-self: initial;
+            margin-right: 129px;
+        }
+    }
+
+    .emailAddress {
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .greenArrowContact{
+        right: 87%;
+    }
+
+    .pinkSquiggleContact {
+        left: -15%;
+    }
+
+
 }
