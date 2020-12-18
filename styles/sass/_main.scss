@@ -165,17 +165,19 @@ main {
     position:relative;
 }
 
-.thinPurpleTriangle {
+.triangle2Container {
     top: -100%;
     right: 0;
-    transform: rotate(20deg);
     width: 20%;
 }
 
+.thinPurpleTriangle {
+    transform: rotate(20deg);
+}
+
 .pinkCircle {
-    top: -70%;
+    top: 0;
     right: 5%;
-    width: 5%;
 }
 
 .blueCircle {
@@ -267,14 +269,17 @@ main {
     }
 }
 
-.purpleTriangleProject {
+.triangle3Container {
     top: -14.5%;
     right: 82%;
+}
+
+.purpleTriangleProject {
     transform: rotate(-20deg);
 }
 
 .pinkCircleProject {
-    top: -15.9%;
+    top:-5%;
     left: 9%;
 }
 
@@ -309,48 +314,5 @@ main {
     z-index: -1;
 }
 
-// **** Media Queries***********
 
-@media (max-width:1250px){
 
-    .pinkSquiggle {
-        left: -23%;
-    }
-
-    .greenCircle {
-        left: -23%
-    }
-
-    .greenArrow {
-        top: 141%;
-        right: -14%;
-    }
-
-    .triangleContainer {
-    top: -72%;
-    left: -4%;
-    }
-
-    .pinkTriangle {
-        width: 70%;
-    }
-
-    .thickPurpleCircle {
-    top: 53%;
-    left: 14%;
-    width: 30%;
-    }
-
-    .blueSquiggles2 {
-    top: -87%;
-    }
-
-    .profilePhoto {
-        width: 35%;
-    }
-
-    .greyDotCircle {
-        width: auto;
-        left: -50%;
-    }
-}

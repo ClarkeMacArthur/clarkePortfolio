@@ -446,7 +446,7 @@ header::after {
 
 .greenCircle {
   top: -90%;
-  left: -45%;
+  left: -32%;
 }
 
 .tinyPinkCircle {
@@ -795,18 +795,20 @@ main::before {
   position: relative;
 }
 
-.thinPurpleTriangle {
+.triangle2Container {
   top: -100%;
   right: 0;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
   width: 20%;
 }
 
+.thinPurpleTriangle {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
 .pinkCircle {
-  top: -70%;
+  top: 0;
   right: 5%;
-  width: 5%;
 }
 
 .blueCircle {
@@ -923,15 +925,18 @@ main::before {
   margin-right: 20px;
 }
 
-.purpleTriangleProject {
+.triangle3Container {
   top: -14.5%;
   right: 82%;
+}
+
+.purpleTriangleProject {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
 
 .pinkCircleProject {
-  top: -15.9%;
+  top: -5%;
   left: 9%;
 }
 
@@ -964,41 +969,6 @@ main::before {
   top: 70%;
   left: -20%;
   z-index: -1;
-}
-
-@media (max-width: 1250px) {
-  .pinkSquiggle {
-    left: -23%;
-  }
-  .greenCircle {
-    left: -23%;
-  }
-  .greenArrow {
-    top: 141%;
-    right: -14%;
-  }
-  .triangleContainer {
-    top: -72%;
-    left: -4%;
-  }
-  .pinkTriangle {
-    width: 70%;
-  }
-  .thickPurpleCircle {
-    top: 53%;
-    left: 14%;
-    width: 30%;
-  }
-  .blueSquiggles2 {
-    top: -87%;
-  }
-  .profilePhoto {
-    width: 35%;
-  }
-  .greyDotCircle {
-    width: auto;
-    left: -50%;
-  }
 }
 
 .contact {
@@ -1189,28 +1159,24 @@ form button:active {
   color: #50efcb;
 }
 
-.blueTriangle {
-  position: absolute;
+.triangle4Container {
   width: 40%;
   top: -75%;
   left: -70%;
 }
 
 .pinkCircleContact {
-  position: absolute;
-  top: -75%;
-  left: -54%;
+  top: 0;
+  left: 44%;
 }
 
 .bigGreenCircleContact {
-  position: absolute;
   width: 30%;
   top: -54%;
   right: -61%;
 }
 
 .blueSquigglesContact {
-  position: absolute;
   width: 20%;
   -webkit-transform: rotate(-60deg);
           transform: rotate(-60deg);
@@ -1219,7 +1185,6 @@ form button:active {
 }
 
 .greenArrowContact {
-  position: absolute;
   width: 15%;
   top: 50%;
   right: 150%;
@@ -1228,13 +1193,11 @@ form button:active {
 }
 
 .pinkSquiggleContact {
-  position: absolute;
   top: -18%;
   left: -73%;
 }
 
 .tinyPinkTriangleContact {
-  position: absolute;
   top: 70%;
   right: -40%;
 }
@@ -1246,4 +1209,170 @@ footer {
   padding-top: 150px;
   padding-bottom: 50px;
   letter-spacing: 1.4px;
+}
+
+@media (max-width: 1250px) {
+  .pinkSquiggle {
+    left: -23%;
+  }
+  .greenCircle {
+    left: -11%;
+  }
+  .greenArrow {
+    top: 141%;
+    right: -14%;
+  }
+  .triangleContainer {
+    top: -72%;
+    left: -4%;
+  }
+  .pinkTriangle {
+    width: 70%;
+  }
+  .thickPurpleCircle {
+    top: 53%;
+    left: 14%;
+    width: 30%;
+  }
+  .blueSquiggles2 {
+    top: -87%;
+  }
+  .profilePhoto {
+    width: 35%;
+  }
+  .greyDotCircle {
+    width: auto;
+    left: -50%;
+  }
+  .triangle2Container {
+    top: -80%;
+  }
+  .pinkCircleProject {
+    top: -15.9%;
+  }
+  .triangle4Container {
+    left: -46%;
+  }
+  .pinkSquiggleContact {
+    left: -36%;
+  }
+  .bigGreenCircleContact {
+    right: -30%;
+  }
+  .blueSquigglesContact {
+    right: -26%;
+  }
+  .greenArrowContact {
+    right: 116%;
+  }
+  .tinyPinkTriangleContact {
+    top: 88%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 975px) {
+  h1 {
+    font-size: 7rem;
+  }
+  .blueSquiggles {
+    top: -130%;
+  }
+  .pinkSquiggle {
+    display: none;
+  }
+  .profileContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profileContainer .profilePhoto {
+    width: 100%;
+  }
+  .profileContainer .profileText {
+    position: relative;
+    width: 90%;
+    z-index: 100;
+    margin-top: 100px;
+  }
+  .greyDotCircle {
+    top: 22%;
+    left: -34%;
+  }
+  .triangleContainer {
+    top: -47%;
+  }
+  .blueSquiggles2 {
+    top: -21%;
+    right: -2%;
+  }
+  .thinPurpleCircle {
+    display: none;
+  }
+  .largeHeading {
+    text-align: center;
+  }
+  .largeHeading span {
+    display: block;
+  }
+  .triangle2Container {
+    top: -75%;
+    width: 30%;
+  }
+  .skillList {
+    max-width: 100%;
+  }
+  .blueCircle {
+    right: 93%;
+    top: 52%;
+    width: 25%;
+  }
+  .triangle3Container {
+    width: 30%;
+    right: 72%;
+  }
+  .pinkCircleProject {
+    top: 0;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project .projectText {
+    width: 100%;
+  }
+  .projectTwo, .projectFour {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .greyDotsSquare1, .greyDotsSquare2 {
+    width: 60%;
+  }
+  .triangle4Container {
+    left: -12%;
+  }
+  .bigGreenCircleContact {
+    top: -64%;
+    right: -21%;
+  }
+  .tinyPinkTriangleContact {
+    top: 101%;
+    right: -7%;
+  }
+  .greenArrowContact {
+    top: 91%;
+    right: 94%;
+  }
+  .blueSquigglesContact {
+    top: 12%;
+    right: -8%;
+  }
 }

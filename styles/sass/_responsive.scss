@@ -1,0 +1,194 @@
+// **** Media Queries***********
+
+@media (max-width:1250px){
+
+    .pinkSquiggle {
+        left: -23%;
+    }
+
+    .greenCircle {
+        left: -11%
+    }
+
+    .greenArrow {
+        top: 141%;
+        right: -14%;
+    }
+
+    .triangleContainer {
+        top: -72%;
+        left: -4%;
+    }
+
+    .pinkTriangle {
+        width: 70%;
+    }
+
+    .thickPurpleCircle {
+        top: 53%;
+        left: 14%;
+        width: 30%;
+    }
+
+    .blueSquiggles2 {
+        top: -87%;
+    }
+
+    .profilePhoto {
+        width: 35%;
+    }
+
+    .greyDotCircle {
+        width: auto;
+        left: -50%;
+    }
+
+    .triangle2Container {
+        top: -80%;
+    }
+    
+    .pinkCircleProject {
+        top: -15.9%;
+    }
+
+    .triangle4Container {
+        left: -46%;
+    }
+
+    .pinkSquiggleContact {
+        left: -36%;
+    }
+
+    .bigGreenCircleContact {
+        right: -30%;
+    }
+
+    .blueSquigglesContact {
+        right: -26%;
+    }
+
+    .greenArrowContact {
+        right: 116%;
+    }
+
+    .tinyPinkTriangleContact {
+        top: 88%;
+        right: -25%;
+    }
+}
+
+@media (max-width:975px) {
+    h1 {
+        font-size: 7rem
+    }
+
+    .blueSquiggles {
+        top: -130%;
+    }
+
+    .pinkSquiggle {
+        display:none;
+    }
+
+    .profileContainer {
+        flex-direction:column;
+        align-items: center;
+        .profilePhoto {
+            width:100%;
+        }
+        .profileText {
+            position: relative;
+            width: 90%;
+            z-index: 100;
+            margin-top: 100px;
+        }
+    }
+
+    .greyDotCircle {
+        top: 22%;
+        left: -34%
+    }
+
+    .triangleContainer {
+        top: -47%;
+    }
+
+    .blueSquiggles2 {
+        top:-21%;
+        right: -2%;
+    }
+
+    .thinPurpleCircle { 
+        display:none;
+    }
+
+    .largeHeading {
+        text-align: center;
+        span {
+            display:block;
+        }
+    }
+
+    .triangle2Container {
+        top: -75%;
+        width: 30%;
+    }
+
+    .skillList {
+        max-width: 100%;
+    }
+
+    .blueCircle {
+        right: 93%;
+        top: 52%;
+        width: 25%;
+}
+
+    .triangle3Container {
+        width: 30%;
+        right: 72%;
+    }
+
+    .pinkCircleProject {
+        top:0
+    }
+
+    .project {
+        flex-direction: column;
+        .projectText {
+            width: 100%;
+        }
+    }
+
+    .projectTwo, .projectFour {
+        flex-direction: column-reverse;
+    }
+
+    .greyDotsSquare1, .greyDotsSquare2 {
+        width: 60%;
+    }
+
+    .triangle4Container {
+        left: -12%;
+    }
+
+    .bigGreenCircleContact {
+        top: -64%;
+        right: -21%;
+    }
+
+    .tinyPinkTriangleContact {
+    top: 101%;
+    right: -7%;
+}
+
+    .greenArrowContact {
+        top: 91%;
+        right: 94%;
+    }
+
+    .blueSquigglesContact {
+        top: 12%;
+        right: -8%;
+    }
+}
