@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     &::before {
         content:"";
@@ -61,33 +65,32 @@ main {
 
 .greyDotCircle {
     position: absolute;
-z-index: 95;
-top: 20%;
-width: 600px;
-left: -50%;
+    z-index: 95;
+    top: 20%;
+    width: 600px;
+    left: -50%;
+}
+
+.triangleContainer {
+    top: -110%;
+    left: -3%;
 }
 
 .pinkTriangle {
-    position: absolute;
-    top: -110%;
-    left: -10%;
+    position:relative
 }
-
 .thickPurpleCircle {
-    position: absolute;
-    top: -80%;
-    left: -8%;
+    top: 48%;
+    left: 12%;
     width: 200px
 }
 
 .blueSquiggles2 {
-    position: absolute;
     top: -100%;
     right: 10%;
 }
 
 .thinPurpleCircle {
-    position: absolute;
     top: -20%;
     right: 0;
 }
@@ -98,7 +101,7 @@ left: -50%;
         position:absolute;
         top:auto;
         left:0;
-        height: 100%;
+        height: 130%;
         width:100%;
         transform: skewY(7deg);
         background: $offWhite;
@@ -109,7 +112,7 @@ left: -50%;
 
 .skillFlex {
     .sectionHeading{
-        padding-top:200px;
+        padding-top:350px;
     }
 }
 
@@ -163,7 +166,6 @@ left: -50%;
 }
 
 .thinPurpleTriangle {
-    position: absolute;
     top: -100%;
     right: 0;
     transform: rotate(20deg);
@@ -171,20 +173,17 @@ left: -50%;
 }
 
 .pinkCircle {
-    position: absolute;
     top: -70%;
     right: 5%;
     width: 5%;
 }
 
 .blueCircle {
-    position: absolute;
     right: 85%;
-    top: 60%;
+    top: 97%;
 }
 
 .pinkSquiggle2 {
-    position: absolute;
     right: 0;
     top: 130%;
 }
@@ -195,7 +194,7 @@ left: -50%;
     align-items: center;
     padding-bottom: 300px;
     .sectionHeading {
-        padding-top: 200px;
+        padding-top: 450px;
         margin-bottom: 200px;
     }
 }
@@ -203,6 +202,7 @@ left: -50%;
 .project {
     display: flex;
     margin: 50px;
+    margin-bottom: 200px;
     ul {
         display:flex;
         li {
@@ -268,27 +268,23 @@ left: -50%;
 }
 
 .purpleTriangleProject {
-    position: absolute;
     top: -14.5%;
     right: 82%;
     transform: rotate(-20deg);
 }
 
 .pinkCircleProject {
-    position: absolute;
     top: -15.9%;
     left: 9%;
 }
 
 .greyDotsSquare1 {
-    position: absolute;
     right: -30%;
     z-index: -1;
     top: 5%;
 }
 
 .bigPinkCircle  {
-    position: absolute;
     width: 20%;
     left: -17%;
     top: 35%;
@@ -296,24 +292,65 @@ left: -50%;
 }
 
 .blueSquigglesProject {
-    position: absolute;
     top: 30%;
     left: -4%;
     z-index: -1;
 }
 
 .greenArrowProject {
-    position: absolute;
     width: 10%;
     right: -5%;
     top: 50%;
 }
 
 .greyDotsSquare2 {
-    position: absolute;
     top: 70%;
     left: -20%;
     z-index: -1;
 }
 
+// **** Media Queries***********
 
+@media (max-width:1250px){
+
+    .pinkSquiggle {
+        left: -23%;
+    }
+
+    .greenCircle {
+        left: -23%
+    }
+
+    .greenArrow {
+        top: 141%;
+        right: -14%;
+    }
+
+    .triangleContainer {
+    top: -72%;
+    left: -4%;
+    }
+
+    .pinkTriangle {
+        width: 70%;
+    }
+
+    .thickPurpleCircle {
+    top: 53%;
+    left: 14%;
+    width: 30%;
+    }
+
+    .blueSquiggles2 {
+    top: -87%;
+    }
+
+    .profilePhoto {
+        width: 35%;
+    }
+
+    .greyDotCircle {
+        width: auto;
+        left: -50%;
+    }
+}

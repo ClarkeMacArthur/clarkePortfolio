@@ -583,6 +583,10 @@ header::after {
   z-index: -1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main::before {
   content: "";
   position: absolute;
@@ -671,27 +675,27 @@ main::before {
   left: -50%;
 }
 
-.pinkTriangle {
-  position: absolute;
+.triangleContainer {
   top: -110%;
-  left: -10%;
+  left: -3%;
+}
+
+.pinkTriangle {
+  position: relative;
 }
 
 .thickPurpleCircle {
-  position: absolute;
-  top: -80%;
-  left: -8%;
+  top: 48%;
+  left: 12%;
   width: 200px;
 }
 
 .blueSquiggles2 {
-  position: absolute;
   top: -100%;
   right: 10%;
 }
 
 .thinPurpleCircle {
-  position: absolute;
   top: -20%;
   right: 0;
 }
@@ -701,7 +705,7 @@ main::before {
   position: absolute;
   top: auto;
   left: 0;
-  height: 100%;
+  height: 130%;
   width: 100%;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
@@ -712,7 +716,7 @@ main::before {
 }
 
 .skillFlex .sectionHeading {
-  padding-top: 200px;
+  padding-top: 350px;
 }
 
 .skillList {
@@ -792,7 +796,6 @@ main::before {
 }
 
 .thinPurpleTriangle {
-  position: absolute;
   top: -100%;
   right: 0;
   -webkit-transform: rotate(20deg);
@@ -801,20 +804,17 @@ main::before {
 }
 
 .pinkCircle {
-  position: absolute;
   top: -70%;
   right: 5%;
   width: 5%;
 }
 
 .blueCircle {
-  position: absolute;
   right: 85%;
-  top: 60%;
+  top: 97%;
 }
 
 .pinkSquiggle2 {
-  position: absolute;
   right: 0;
   top: 130%;
 }
@@ -834,7 +834,7 @@ main::before {
 }
 
 .projectFlex .sectionHeading {
-  padding-top: 200px;
+  padding-top: 450px;
   margin-bottom: 200px;
 }
 
@@ -843,6 +843,7 @@ main::before {
   display: -ms-flexbox;
   display: flex;
   margin: 50px;
+  margin-bottom: 200px;
 }
 
 .project ul {
@@ -923,7 +924,6 @@ main::before {
 }
 
 .purpleTriangleProject {
-  position: absolute;
   top: -14.5%;
   right: 82%;
   -webkit-transform: rotate(-20deg);
@@ -931,20 +931,17 @@ main::before {
 }
 
 .pinkCircleProject {
-  position: absolute;
   top: -15.9%;
   left: 9%;
 }
 
 .greyDotsSquare1 {
-  position: absolute;
   right: -30%;
   z-index: -1;
   top: 5%;
 }
 
 .bigPinkCircle {
-  position: absolute;
   width: 20%;
   left: -17%;
   top: 35%;
@@ -952,24 +949,56 @@ main::before {
 }
 
 .blueSquigglesProject {
-  position: absolute;
   top: 30%;
   left: -4%;
   z-index: -1;
 }
 
 .greenArrowProject {
-  position: absolute;
   width: 10%;
   right: -5%;
   top: 50%;
 }
 
 .greyDotsSquare2 {
-  position: absolute;
   top: 70%;
   left: -20%;
   z-index: -1;
+}
+
+@media (max-width: 1250px) {
+  .pinkSquiggle {
+    left: -23%;
+  }
+  .greenCircle {
+    left: -23%;
+  }
+  .greenArrow {
+    top: 141%;
+    right: -14%;
+  }
+  .triangleContainer {
+    top: -72%;
+    left: -4%;
+  }
+  .pinkTriangle {
+    width: 70%;
+  }
+  .thickPurpleCircle {
+    top: 53%;
+    left: 14%;
+    width: 30%;
+  }
+  .blueSquiggles2 {
+    top: -87%;
+  }
+  .profilePhoto {
+    width: 35%;
+  }
+  .greyDotCircle {
+    width: auto;
+    left: -50%;
+  }
 }
 
 .contact {
@@ -1113,7 +1142,7 @@ form textarea {
   resize: none;
 }
 
-button {
+form button {
   color: #fe6192;
   font-weight: 700;
   border: 2px solid #fe6192;
@@ -1126,14 +1155,38 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus {
+form button:hover, form button:focus {
   color: #50efcb;
   border: 2px solid #50efcb;
 }
 
-button:active {
+form button:active {
   background-color: #50efcb;
   color: #443a8b;
+}
+
+.emailAddress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.copyButton {
+  background-color: transparent;
+  color: #fe6192;
+  border: none;
+  font-size: 3rem;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.copyButton:hover {
+  color: #50efcb;
 }
 
 .blueTriangle {

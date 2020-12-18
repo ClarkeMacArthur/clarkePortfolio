@@ -85,7 +85,7 @@ form {
     }
 }
 
-button {
+form button {
     color: $pink;
     font-weight:700;
     border: 2px solid $pink;
@@ -102,6 +102,24 @@ button {
     &:active {
         background-color: $green;
         color: $purple;
+    }
+}
+
+.emailAddress {
+    display:flex;
+    justify-content: center;
+}
+
+.copyButton {
+    background-color: transparent;
+    color: $pink;
+    border: none;
+    font-size: 3rem;
+    margin-left: 10px;
+    transition: all 0.3s ease-in;
+    cursor:pointer;
+    &:hover {
+        color: $green;
     }
 }
 
