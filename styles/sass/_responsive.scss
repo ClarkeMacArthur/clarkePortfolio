@@ -321,7 +321,7 @@
 @media (max-width:460px) {
     header {
         .heading {
-            margin-top: 74%;
+            margin-top: 50%;
         }
         h2 {
             font-size: 1.8rem;
@@ -346,7 +346,7 @@
     }
 
     .blueSquiggles {
-        top: 28%;
+        top: 11%;
     }
     
     .pinkSquiggle {
@@ -396,8 +396,18 @@
         }
     }
 
+
+    .projectFlex {
+        .sectionHeading {
+            padding-top: 100px;
+            margin-bottom: 100px;
+        }
+
+    }
+
     .project {
         align-items: center;
+        margin-bottom: 0;
         .projectMockup {
             width:80%
         }

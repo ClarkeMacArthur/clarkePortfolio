@@ -359,7 +359,7 @@ header h2 {
 
 header {
   background-color: #443a8b;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 header span {
@@ -1453,7 +1453,7 @@ footer {
 
 @media (max-width: 460px) {
   header .heading {
-    margin-top: 74%;
+    margin-top: 50%;
   }
   header h2 {
     font-size: 1.8rem;
@@ -1471,7 +1471,7 @@ footer {
     font-size: 4rem;
   }
   .blueSquiggles {
-    top: 28%;
+    top: 11%;
   }
   .pinkSquiggle {
     left: 3%;
@@ -1506,10 +1506,15 @@ footer {
   .skillFlex .largeHeading {
     font-size: 5rem;
   }
+  .projectFlex .sectionHeading {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
   .project {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0;
   }
   .project .projectMockup {
     width: 80%;
