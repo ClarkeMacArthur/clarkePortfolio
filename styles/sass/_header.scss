@@ -1,8 +1,6 @@
 header {
     background-color: $purple;
-    min-height: 70vh;
-    margin-bottom:300px;
-    
+    min-height: 90vh;
     span {
         display:block;
     }
@@ -13,19 +11,6 @@ header {
     justify-content: center;
     align-items: center;
     height:70vh;
-}
-
-header::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width:100%;
-    transform: skewY(-7deg);
-    background: $purple;
-    transform-origin: bottom left;
-    z-index: -1;
 }
 
 .logo {
@@ -44,18 +29,18 @@ header::after{
 }
 
 .blueSquiggles {
-    top:-150%;
+    top: -99%;
     right: 30%;
 }
 
 .pinkSquiggle {
-    top: 115%;
-    left: -50%;
+    top: 38%;
+    left: -31%;
 }
 
 .greenArrow {
     top: 90%;
-    right: -35%;
+    right: -26%;
 }
 
 .tinyBlueTriangle {

@@ -13,7 +13,7 @@ main {
         transform: skewY(-7deg);
         background: white;
         transform-origin: bottom left;
-        z-index: -1;
+        z-index: 0;
     }
 
 }
@@ -29,6 +29,8 @@ main {
     flex-direction: column;
     align-items:center;
     margin-top:300px;
+    position: relative;
+    z-index: 1;
 }
 
 .aboutFlex {
@@ -56,6 +58,9 @@ main {
     }
         .profileText {
             width:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             p {
                 margin-bottom:10px;
             }
@@ -101,18 +106,18 @@ main {
         position:absolute;
         top:auto;
         left:0;
-        height: 130%;
+        height: 1200px;
         width:100%;
         transform: skewY(7deg);
         background: $offWhite;
         transform-origin: bottom right;
-        z-index: -1;
+        z-index: 0;
     }
 }
 
 .skillFlex {
     .sectionHeading{
-        padding-top:350px;
+        padding-top:150px;
     }
 }
 
@@ -194,9 +199,9 @@ main {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
     .sectionHeading {
-        padding-top: 450px;
+        padding-top: 150px;
         margin-bottom: 200px;
     }
 }

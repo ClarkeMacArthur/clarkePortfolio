@@ -320,24 +320,8 @@ header h2 {
 
 .profileText p {
   font-size: 1.8rem;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 1.08px;
-}
-
-.profileText ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-size: 5rem;
-  color: #443a8b;
-  margin-top: 15px;
-}
-
-.profileText a:hover {
-  color: #fe6192;
 }
 
 .skillIcon {
@@ -375,8 +359,7 @@ header h2 {
 
 header {
   background-color: #443a8b;
-  min-height: 70vh;
-  margin-bottom: 300px;
+  min-height: 90vh;
 }
 
 header span {
@@ -396,21 +379,6 @@ header span {
   height: 70vh;
 }
 
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transform: skewY(-7deg);
-          transform: skewY(-7deg);
-  background: #443a8b;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  z-index: -1;
-}
-
 .logo {
   width: 100px;
   position: absolute;
@@ -427,18 +395,18 @@ header::after {
 }
 
 .blueSquiggles {
-  top: -150%;
+  top: -99%;
   right: 30%;
 }
 
 .pinkSquiggle {
-  top: 115%;
-  left: -50%;
+  top: 38%;
+  left: -31%;
 }
 
 .greenArrow {
   top: 90%;
-  right: -35%;
+  right: -26%;
 }
 
 .tinyBlueTriangle {
@@ -574,7 +542,7 @@ header::after {
   position: absolute;
   top: 100px;
   left: 0;
-  height: 100%;
+  height: 500px;
   width: 100%;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
@@ -600,7 +568,7 @@ main::before {
   background: white;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
-  z-index: -1;
+  z-index: 0;
 }
 
 .aboutMe {
@@ -619,6 +587,8 @@ main::before {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 300px;
+  position: relative;
+  z-index: 1;
 }
 
 .aboutFlex {
@@ -662,6 +632,16 @@ main::before {
 
 .profileContainer .profileText {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .profileContainer .profileText p {
@@ -706,18 +686,18 @@ main::before {
   position: absolute;
   top: auto;
   left: 0;
-  height: 130%;
+  height: 1200px;
   width: 100%;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
   background: #f7f7f7;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
-  z-index: -1;
+  z-index: 0;
 }
 
 .skillFlex .sectionHeading {
-  padding-top: 350px;
+  padding-top: 150px;
 }
 
 .skillList {
@@ -833,11 +813,11 @@ main::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 
 .projectFlex .sectionHeading {
-  padding-top: 450px;
+  padding-top: 150px;
   margin-bottom: 200px;
 }
 
@@ -1217,7 +1197,7 @@ footer {
     left: -23%;
   }
   .greenCircle {
-    left: -11%;
+    display: none;
   }
   .greenArrow {
     top: 141%;
@@ -1437,6 +1417,9 @@ footer {
   .pinkSquiggle2 {
     top: 110%;
   }
+  .skills::before {
+    height: 1500px;
+  }
   .projectFlex .sectionHeading {
     padding-top: 200px;
   }
@@ -1469,20 +1452,11 @@ footer {
 }
 
 @media (max-width: 460px) {
-  header {
-    min-height: 50vh;
-  }
-  header .headerFlex {
-    height: 50vh;
-  }
   header .heading {
     margin-top: 74%;
   }
   header h2 {
     font-size: 1.8rem;
-  }
-  .hamburgerMenu {
-    height: auto;
   }
   .hamburgerMenu a {
     font-size: 3rem;
@@ -1522,6 +1496,9 @@ footer {
   }
   .triangle2Container {
     top: -57%;
+  }
+  .skills::before {
+    height: 1350px;
   }
   .skillItem {
     margin: 10px;

@@ -49,18 +49,8 @@ header h2 {
     }
     p {
         font-size: 1.8rem;
-        line-height: 1.4;
+        line-height: 1.6;
         letter-spacing: 1.08px;
-    }
-    ul {
-        display:flex;
-        justify-content: space-evenly;
-        font-size: 5rem;
-        color: $purple;
-        margin-top:15px;
-    }
-    a:hover {
-        color: $pink;
     }
 }
 

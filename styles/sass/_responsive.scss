@@ -7,7 +7,7 @@
     }
 
     .greenCircle {
-        left: -11%
+        display:none;
     }
 
     .greenArrow {
@@ -271,6 +271,12 @@
         top: 110%;
     }
 
+    .skills {
+        &::before {
+            height: 1500px;
+        }
+    }
+
     .projectFlex .sectionHeading {
     padding-top: 200px;
     }
@@ -314,10 +320,6 @@
 
 @media (max-width:460px) {
     header {
-        min-height: 50vh;
-        .headerFlex {
-            height: 50vh;
-        }
         .heading {
             margin-top: 74%;
         }
@@ -327,7 +329,6 @@
     }
 
     .hamburgerMenu {
-        height:auto;
         a {
             font-size: 3rem;
         }
@@ -377,6 +378,13 @@
     .triangle2Container {
         top:-57%;
     }
+
+    .skills {
+        &::before {
+            height: 1350px;
+        }
+    }
+
 
     .skillItem {
         margin:10px;
