@@ -1,25 +1,13 @@
 // namespace object 
 const app = {}
 
-// Hamburger nav function
 
-// burger nav vanilla - get this working
-// app.burgerNav = function() {
-//     const hamburger = document.querySelector('.hamburger');
-//     // const menu = document.querySelector('.hamburgerMenu');
-//     // const top = document.querySelector('.hamburger span:nth-of-type(1)');
-//     // const middle = document.querySelector('.hamburger span:nth-of-type(2)');
-//     // const bottom = document.querySelector('.hamburger span:nth-of-type(3)')
-
-//     hamburger.addEventListener('click', function() {
-//         console.log("Click!");
-//         // menu.classList.toggle('hamburgerMenuOpen');
-//     });
-// }
-
-$('.clickOpen').click(function () {
+// hamburger nav
+app.nav = $('.clickOpen').click(function () {
+        // opens and closes the menu
     $('.hamburgerMenu')
         .toggleClass('hamburgerMenuOpen hamburgerMenuClosed');
+        // transforming hamburger icon
     $('.hamburger span:nth-of-type(1)')
         .toggleClass('lineOne');
     $('.hamburger span:nth-of-type(2)')
@@ -27,6 +15,7 @@ $('.clickOpen').click(function () {
     $('.hamburger span:nth-of-type(3)')
         .toggleClass('lineThree');
 })
+
 
 
 
@@ -43,6 +32,10 @@ app.copy = function(elementId) {
 // initialize the app
 app.init = function() {
     app.copy();
-    app.toggleBurger();
-    app.burgerNav();
+    app.nav();
 }
+
+// document ready
+$(document).ready(function() {
+    app.init();
+});
