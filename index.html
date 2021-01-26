@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    <!-- Link to Styles -->
+    <!-- Link to Style Sheet -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Font Awesome link -->
 <script src="https://kit.fontawesome.com/481dfe009f.js" crossorigin="anonymous"></script>
@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Links for Favicon -->
-
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
@@ -33,42 +32,40 @@
 </head>
 <body>
     <!-- Header begins -->
-    <header>
+    <header id="home">
         <div class="wrapper headerFlex">
             <!-- Hamburger Navigation -->
+            <button class="hamburger clickOpen" aria-label="open navigation menu">
+                <!-- spans for transforming hamburger effect -->
+                
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
-                <div class="hamburger">
-                    <label class="srOnly" for="burgerCheck">Open menu</label>
-                    <input type="checkbox" name="hamburger" id="burgerCheck" class="burgerInput">
-                    <!-- spans for transforming hamburger effect -->
-                    
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-
-                    <ul class="hamburgerMenu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul class="hamburgerMenu hamburgerMenuClosed">
+                        <li class="clickOpen"><a href="#home">Home</a></li>
+                        <li class="clickOpen"><a href="#about">About</a></li>
+                        <li class="clickOpen"><a href="#skills">Skills</a></li>
+                        <li class="clickOpen"><a href="#projects">Projects</a></li>
+                        <li class="clickOpen"><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
+                
             </nav>
             <img src="./assets/logo.png" alt="a logo of a blue triangle with a pink circle overlapping one of the sides, in the middle it reads '//cm'" class="logo">
             <div class="headerText">
                 <!-- Background shapes for the Header live here. Aria-hidden attribute added to prevent screen readers from getting overwhelmed -->
                 <div class="backgroundShapes tinyBlueTriangle" aria-hidden="true">
-                    <img src="./assets/tinyBlueTriangle.svg" aria-hidden="true">
+                    <img src="./assets/tinyBlueTriangle.svg" alt="" aria-hidden="true">
                 </div>
                 <div class="backgroundShapes blueSquiggles">
                     <img src="./assets/blueSquiggles.svg" aria-hidden="true">
                 </div>
-                <div class="backgroundShapes greenArrow" aria-hidden="true">
-                    <img src="./assets/greenArrow.svg" aria-hidden="true">
+                <div class="backgroundShapes greenArrow"  aria-hidden="true">
+                    <img src="./assets/greenArrow.svg"  alt="" aria-hidden="true">
                 </div>
                 <div class="backgroundShapes pinkSquiggle" aria-hidden="true">
-                    <img src="./assets/pinkSquiggle.svg" aria-hidden="true">
+                    <img src="./assets/pinkSquiggle.svg" alt="" aria-hidden="true">
                 </div>
                 <div class="heading animate__animated animate__bounceInRight" >
                     <h1>Clarke <span class="lastName">MacArthur</span></h1>
@@ -91,21 +88,21 @@
                     <!-- Background shapes for the About Me section live here. Role attribute added to prevent screen readers from getting overwhelmed -->
                     <div class="backgroundShapes triangleContainer" aria-hidden="true">
                         <div class="pinkTriangle">
-                            <img src="./assets/pinkTriangle.svg" aria-hidden="true">
+                            <img src="./assets/pinkTriangle.svg" alt="" aria-hidden="true">
                         </div>
                         <div class="backgroundShapes thickPurpleCircle" aria-hidden="true">
-                            <img src="./assets/thickPurpleCircle.svg" aria-hidden="true">
+                            <img src="./assets/thickPurpleCircle.svg" alt="" aria-hidden="true">
                         </div>
                     </div>
                     <div class="backgroundShapes thinPurpleCircle" aria-hidden="true">
-                        <img src="./assets/thinPurpleCircle.svg" aria-hidden="true">
+                        <img src="./assets/thinPurpleCircle.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes blueSquiggles2" aria-hidden="true">
-                        <img src="./assets/blueSquiggles.svg" aria-hidden="true">
+                        <img src="./assets/blueSquiggles.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes profilePhoto" aria-hidden="true">
                         <div class="greyDotCircle">
-                            <img src="./assets/greyDotCircle.svg" aria-hidden="true">
+                            <img src="./assets/greyDotCircle.svg" alt="" aria-hidden="true">
                         </div>
                         <img src="./assets/profilePhoto.jpeg" alt="headshot of a handsome nonbinary person (the website creator) with white skin, short brown hair and hazel eyes wearing a black tshirt and red flannel buttonup" class="clarkePhoto">
                     </div>
@@ -132,17 +129,17 @@
                     <!-- Background shapes for the Skills section live here. Role attribute added to prevent screen readers from getting overwhelmed -->
                     <div class="backgroundShapes triangle2Container" aria-hidden="true">
                         <div class="backgroundImages thinPurpleTriangle">
-                            <img src="./assets/thinPurpleTriangle.svg" aria-hidden="true">
+                            <img src="./assets/thinPurpleTriangle.svg" alt="" aria-hidden="true">
                         </div>
                         <div class="backgroundShapes pinkCircle">
-                            <img src="./assets/tinyPinkCircle.svg" aria-hidden="true">
+                            <img src="./assets/tinyPinkCircle.svg" alt="" aria-hidden="true">
                         </div>
                     </div>
                     <div class="backgroundShapes blueCircle" aria-hidden="true">
-                        <img src="./assets/blueCircle.svg" aria-hidden="true">
+                        <img src="./assets/blueCircle.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes pinkSquiggle2" aria-hidden="true">
-                        <img src="./assets/pinkSquiggle.svg" aria-hidden="true">
+                        <img src="./assets/pinkSquiggle.svg" alt="" aria-hidden="true">
                     </div>
 
                     <!-- Skills icon gallery -->
@@ -259,26 +256,26 @@
                     <!-- Background shapes for the Projects section live here. Role attribute added to prevent screen readers from getting overwhelmed -->
                     <div class="backgroundShapes triangle3Container" aria-hidden="true">
                         <div class="backgroundImages purpleTriangleProject">
-                            <img src="./assets/thinPurpleTriangle.svg" aria-hidden="true">
+                            <img src="./assets/thinPurpleTriangle.svg" alt="" aria-hidden="true">
                         </div>
                         <div class="backgroundShapes pinkCircleProject">
-                            <img src="./assets/tinyPinkCircle.svg" aria-hidden="true">
+                            <img src="./assets/tinyPinkCircle.svg" alt="" aria-hidden="true">
                         </div>
                     </div>
                     <div class="backgroundShapes greyDotsSquare1" aria-hidden="true">
-                        <img src="./assets/greyDotsSquare.png" aria-hidden="true">
+                        <img src="./assets/greyDotsSquare.png" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes bigPinkCircle" aria-hidden="true">
-                        <img src="./assets/tinyPinkCircle.svg" aria-hidden="true">
+                        <img src="./assets/tinyPinkCircle.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes blueSquigglesProject" aria-hidden="true">
-                        <img src="./assets/blueSquiggles.svg" aria-hidden="true">
+                        <img src="./assets/blueSquiggles.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes greenArrowProject" aria-hidden="true">
-                        <img src="./assets/greenArrow.svg" aria-hidden="true">
+                        <img src="./assets/greenArrow.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes greyDotsSquare2" aria-hidden="true">
-                        <img src="./assets/greyDotsSquare.png" aria-hidden="true">
+                        <img src="./assets/greyDotsSquare.png" alt="" aria-hidden="true">
                     </div>
                     <div class="project projectOne" >
                         <div class="projectMockup" data-aos="fade-right"  data-aos-duration="1500">
@@ -494,26 +491,26 @@
                     <!-- Background shapes for the Contact section live here. Role attribute added to prevent screen readers from getting overwhelmed -->
                     <div class="backgroundShapes triangle4Container" aria-hidden="true">
                         <div class="backgroundimages blueTriangle">
-                            <img src="./assets/blueTriangle.svg" aria-hidden="true">
+                            <img src="./assets/blueTriangle.svg" alt="" aria-hidden="true">
                         </div>
                         <div class="backgroundShapes pinkCircleContact">
                             <img src="./assets/tinyPinkCircle.svg" aria-hidden="true">
                         </div>
                     </div>
                     <div class="backgroundShapes bigGreenCircleContact" aria-hidden="true">
-                        <img src="./assets/tinyGreenCircle.svg" aria-hidden="true">
+                        <img src="./assets/tinyGreenCircle.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes blueSquigglesContact" aria-hidden="true">
-                        <img src="./assets/blueSquiggles.svg" aria-hidden="true">
+                        <img src="./assets/blueSquiggles.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes greenArrowContact" aria-hidden="true">
-                        <img src="./assets/greenArrow.svg" aria-hidden="true">
+                        <img src="./assets/greenArrow.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes pinkSquiggleContact" aria-hidden="true">
-                        <img src="./assets/pinkSquiggle.svg" aria-hidden="true">
+                        <img src="./assets/pinkSquiggle.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="backgroundShapes tinyPinkTriangleContact" aria-hidden="true">
-                        <img src="./assets/tinyPinkTriangle.svg" aria-hidden="true">
+                        <img src="./assets/tinyPinkTriangle.svg" alt="" aria-hidden="true">
                     </div>
                     <ul class="contactIcons">
                         <li>
@@ -556,6 +553,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- link to jQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <!-- link to javascript -->
     <script src="./script.js"></script>
 </body>
